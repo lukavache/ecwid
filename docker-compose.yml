@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ecwid-api:
+    build:
+      context: ./ecwid-api
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+  
+  ecwid-web:
+    build:
+      context: ./ecwid-web
+      dockerfile: Dockerfile
+    ports:
+      - '4000:4000'
