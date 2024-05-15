@@ -113,7 +113,7 @@ onMounted(() => {
   border-radius: 15px;
   width: 100%;
   max-width: 600px;
-  margin-bottom: 120px;
+  margin-bottom: 142px;
 }
 
 .attributes {

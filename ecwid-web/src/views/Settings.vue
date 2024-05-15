@@ -111,6 +111,7 @@ const exportProducts = async () => {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    margin-bottom: 42px;
 } 
 </style>
   
