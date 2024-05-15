@@ -118,7 +118,6 @@ const addToCart = (product: Product) => {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px;
-  margin: 0;
+  margin-bottom: 120px;
 }
 </style>

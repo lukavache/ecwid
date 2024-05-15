@@ -1,10 +1,10 @@
 <template>
     <div class="header">
-        <h1>Settings</h1>
-        <RouterLink :to="{ path: '/'}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <RouterLink class="link" :to="{ path: '/'}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M5.44958 7.93032L14.7931 7.9996C17.5545 7.9996 19.7931 10.2386 19.7931 13C19.7931 15.7614 17.5545 18 14.7931 18H7.7931C7.24081 18 6.7931 18.4477 6.7931 19C6.7931 19.5523 7.24081 20 7.7931 20H14.7931C18.6591 20 21.7931 16.866 21.7931 13C21.7931 9.13401 18.6591 6 14.7931 6L5.4197 5.93032L7.03611 3.93072C7.43119 3.54481 7.43862 2.91169 7.05271 2.51661C6.6668 2.12152 6.03368 2.11409 5.6386 2.5L2.30125 6.1806C1.9028 6.56979 1.89913 7.20953 2.2931 7.60326L5.6219 11.4311C6.01253 11.8215 6.6457 11.8214 7.03611 11.4307C7.42652 11.0401 7.42634 10.4069 7.0357 10.0165L5.44958 7.93032Z"/>
             </svg>
         </RouterLink>
+        <h1 class="title">Settings</h1>
     </div>
     <div class="a-card a-card--vertical-compact">
         <div class="a-card__paddings">
@@ -88,11 +88,14 @@ const exportProducts = async () => {
 <style scoped>
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.link, .title {
+    flex: 1;
 }
 
 .status-block__content {
